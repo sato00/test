@@ -1,12 +1,14 @@
 
-public class Mp3Player {
+public interface Mp3Player {
 
-		public void play() {
-			System.out.println("再生");
-	}
+		public abstract void play() ;
+	
 		
-		public void stop() {
-			System.out.println("停止");
-		}
-
+		public abstract void stop() ;
+		
+		
+		public abstract void next();
+		
+		
+		public abstract void back() ;
 }
